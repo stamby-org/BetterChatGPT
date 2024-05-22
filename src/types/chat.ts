@@ -75,6 +75,7 @@ export interface LocalStorageInterfaceV0ToV1 {
   chats: ChatInterface[];
   currentChatIndex: number;
   apiKey: string;
+  uploadKey: string;
   apiFree: boolean;
   apiFreeEndpoint: string;
   theme: Theme;
@@ -84,6 +85,7 @@ export interface LocalStorageInterfaceV1ToV2 {
   chats: ChatInterface[];
   currentChatIndex: number;
   apiKey: string;
+  uploadKey: string;
   apiFree: boolean;
   apiFreeEndpoint: string;
   apiEndpoint?: string;
@@ -94,6 +96,7 @@ export interface LocalStorageInterfaceV2ToV3 {
   chats: ChatInterface[];
   currentChatIndex: number;
   apiKey: string;
+  uploadKey: string;
   apiFree: boolean;
   apiFreeEndpoint: string;
   apiEndpoint?: string;
@@ -104,6 +107,7 @@ export interface LocalStorageInterfaceV3ToV4 {
   chats: ChatInterface[];
   currentChatIndex: number;
   apiKey: string;
+  uploadKey: string;
   apiFree: boolean;
   apiFreeEndpoint: string;
   apiEndpoint?: string;
@@ -116,6 +120,7 @@ export interface LocalStorageInterfaceV4ToV5 {
   chats: ChatInterface[];
   currentChatIndex: number;
   apiKey: string;
+  uploadKey: string;
   apiFree: boolean;
   apiFreeEndpoint: string;
   apiEndpoint?: string;
@@ -128,6 +133,7 @@ export interface LocalStorageInterfaceV5ToV6 {
   chats: ChatInterface[];
   currentChatIndex: number;
   apiKey: string;
+  uploadKey: string;
   apiFree: boolean;
   apiFreeEndpoint: string;
   apiEndpoint?: string;
@@ -141,6 +147,7 @@ export interface LocalStorageInterfaceV6ToV7 {
   currentChatIndex: number;
   apiFree?: boolean;
   apiKey: string;
+  uploadKey: string;
   apiEndpoint: string;
   theme: Theme;
   autoTitle: boolean;
@@ -157,4 +164,5 @@ export interface LocalStorageInterfaceV7oV8
   foldersName: string[];
   foldersExpanded: boolean[];
   folders: FolderCollection;
+  uploadKey: string;
 }
